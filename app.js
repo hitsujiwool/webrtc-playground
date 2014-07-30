@@ -38,7 +38,7 @@
       callerView.src = URL.createObjectURL(stream);
       callerView.play();
       pc.addStream(stream);  
-    });
+    }, function() {});
 
   });
 
